@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalMarketing</title>
+    <script src="https://kit.fontawesome.com/115eb0dbb8.js" crossorigin="anonymous"></script>
+    <style>
+        *{margin: 0px; padding: 0px; box-sizing: border-box; }
+        i{ color: white; }
+        i:hover{ color:orange;}
+        
+        .Row1{background-color: rgb(48, 40, 40); display: flex;;justify-content:space-between; align-items: center;;  margin-bottom: 5px;;box-shadow: 0px 5px 5px #888888;}
+       
+        .Row1 .HelpLine{   margin-left: 5%;;color: white; font-weight: bold;;}
+        
+        .Row1 .SocialMediaIcon{padding: 5px;; margin-right: 5%;;}
+        .Row1 .SocialMediaIcon ul{list-style-type: none;;}
+        .Row1 .SocialMediaIcon ul li{display: inline-block; border: 2px solid white; padding: 5px;; font-weight: bold; color:white; border-radius: 5px;;}
+
+        .Row2{ display: flex;;justify-content:space-between; align-items: center;;margin-bottom: 5px;; }
+        .Row2 .Logo{ margin-left: 5%;;}
+        .Row2 .Address{ margin-right: 4%;;}
+        .Row2 .Address ul{ list-style-type: none;;}
+        .Row2 .Address ul li{line-height: 1.3;font-weight: bold; color:black; font-size: 12px;;}
+
+        .Row3{ background-color:lightgray; justify-content: center; display: flex;box-shadow: 0px 5px 5px #888888;}
+        .Row3 .Menu{  width: 100%; }
+        .Row3 .Menu ul{ list-style-type: none;; padding: 5px;; }
+        .Row3 .Menu ul li{display: inline-block; margin: 10px;;}
+        .Row3 .Menu ul li a{ text-decoration: none;; font-weight: bold; color: black;; padding: 5px;; font-size: 14px;}
+        .Row3 .Menu ul li a:hover{border-bottom: 5px solid rgb(235, 96, 16);}
+
+        .Row4{  display: flex; justify-content: center;;margin-top: 10px;;}
+        .Row4 .MainImage{   background-size: cover; background-repeat: no-repeat;;background-size: auto; }
+
+        .Row5{display: flex; justify-content:center;margin-bottom: 80px; column-gap: 50px;; margin-top: 80px;}
+        .Row5 >.PnyOption{  width: 300px; height: 250px; line-height: 2.5; padding: 20px;; border-radius: 25px;; background-color: rgb(235, 235, 235);;box-shadow: 0px 5px 5px #888888; transition: transform 2s ease;}
+        .Row5 >.PnyOption:hover{transform: scale(1.1);}
+
+
+        .Row6{display: flex; border-top:5px solid red; justify-content: center; column-gap: 150px;; padding: 25px;;}
+        .Row6 .Msg{ width: 500px;; text-align: justify; font-size: 14px;; line-height: 1.5;}
+        .Row6 .ImgMsg{ width: 500px;; }
+
+                    /* Row 7 editing */
+        .Row7{display: flex; justify-content: center; border-top:5px solid red;   padding: 10px; column-gap: 40px;}
+        .Row7 .graphics{ width: 60%;margin-left: 10%;}
+        .Row7 .graphics ul li img{border: 2px solid lightgray; width:600px ;height:300px}
+        .Row7 .graphics ul{list-style-type:none ;}
+        .Row7 .graphics ul li{margin-top: 15px; }
+
+
+
+        .Row7 .form{ border:2px solid lightgray;padding: 10px; width: 30%;margin-right:20%; padding: 20px;background-color: #f0f0f0;
+        border-radius: 10px; display: flex;flex-direction: column;height: 350px; box-shadow: 0px 5px 5px #888888; margin-top: 15px;transition: transform 1s ease;}
+        .Row7 .form:hover{transform: scale(1.1);}
+
+            .Row7 .form h1 {text-align: center;margin-bottom: 20px;}
+
+
+            .Row7 .form label {font-weight: bold;}
+            .Row7 .form input { padding: 10px; margin-bottom: 10px;border: 1px solid #ccc;border-radius: 5px;}
+            .Row7 .form button {padding: 10px;background-color: rgb(192, 192, 192);color: #0b0808;
+             border: none; border-radius: 5px;cursor: pointer;transition: background-color 0.3s ease; /* Hover effect */}
+             .Row7 .form button:hover {background-color: orange; color: white;/* Change color on hover */}
+        
+                            /* Row 8 Editing */
+         
+        .Row8{ display: flex;justify-content: center;align-items: center; padding-top: 45px;  }
+        .Row8 .adobPhotoshop{width: 80%;margin-left: 10%;margin-right: 32%;}
+        .Row8 .adobPhotoshop ul li img{border: 2px solid lightgray; width:700px ;height:300px}
+        .Row8 .adobPhotoshop ul{list-style-type:none ;}
+        .Row8 .adobPhotoshop ul li{margin-top: 15px; }
+
+
+        .Row11{padding: 35px; }
+        .Row11 h1{text-align: center;font-size:55px ;}
+        .Row11 .othercourses{  display: flex;justify-content: center;padding: 45px;flex-wrap: wrap;  row-gap: 29px;column-gap: 36px;margin-left: 5%; margin-right: 5%;}
+        .Row11 .multiple{  padding: 15px;width: 350px; height: 250px; display: flex; justify-content: center;align-items: center;box-shadow: 0px 5px 5px #888888; transition: transform 2s ease;}
+        .Row11 .multiple:hover{transform: scale(1.1);}
+        .Row11 .multiple a img{width: 350px;height: 250px; }
+
+
+
+
+
+        .Row9{display: flex; justify-content: center; background-color: rgb(59, 56, 56); flex-wrap: wrap;margin-top: 35px;; }
+        .Row9 .Footer{   width: 25%; height: 400px;; }
+        .Row9 .Footer ul{ list-style-type: none;; padding: 50px;;}
+        .Row9 .Footer ul li{line-height: 3; }
+        .Row9 .Footer ul li a{color:white; text-decoration: none;;}
+        .Row9 .Footer ul li a:hover{color:orange ;}
+
+        .Row9 .Footer table{ line-height: 2.5; padding: 50px; color: white;; font-size: 14px;;}
+        .Row9 .Footer table i{ font-size: 20px;}
+        .Row9 .Footer i{ font-size: 28px; margin: 5px;;}
+
+        .Row10{ display: flex; justify-content: center; background-color:lightgray; }
+        .Row10 .CopyRight{ line-height: 1.5; padding: 15px;;}
+
+          /* All Media Query */
+            /* All media Quries  here */
+            @media(max-width:576px){
+                /* Row 1 */
+                .Row1 {
+                    flex-direction: column;
+                }
+                /* Row2 */
+                .Row2{flex-direction: column; justify-content: center;align-items: center;
+                }
+                .Row2 .Logo{margin-left: 0%;}
+                .Row2 .Address{text-align: center;margin-right: 0%;}
+                /* Row3 */
+                .Row3 .Menu ul li{flex-direction: column;display: block;align-items: center;justify-content: center;
+                }
+                /* Row 5 */
+                .Row5{justify-content: space-evenly;flex-wrap: wrap;row-gap: 40px;
+                }
+                /* Row 6 */
+                .Row6{justify-content: space-evenly;flex-wrap: wrap; row-gap: 30px;}
+                .Row7{flex-wrap: wrap;flex-direction: column;justify-content: center;align-items: center;}
+                .Row7 .graphics{width: 100%;margin-left: 0%;}
+                .Row7 .graphics ul li img {width: 100%;}
+                .Row7 .form{width: 50%;margin-right: 0%;}
+                /* Row 8 */
+                .Row8 .adobPhotoshop{width: 100%;margin-left: 0%; margin-right: 0%;}
+                .Row8 .adobPhotoshop ul li img{width: 100%;}
+                /* Row 9 */
+                    .Row9 { padding: auto;
+                    flex-direction: column; 
+                    align-items: center; 
+                }
+    
+                .Row9 .Footer {
+                
+                    width: 100%; 
+                    height: auto; 
+                    margin-bottom: 20px; 
+                }
+        }
+                /* Media 786 */
+                @media(max-width:786px){
+                /* Row 1 */
+                .Row1 {
+                    flex-direction: column;
+                }
+                /* Row2 */
+                .Row2{flex-direction: column; justify-content: center;align-items: center;
+                }
+                /* Row3 */
+                .Row3 .Menu ul li{flex-direction: column;display: block;align-items: center;justify-content: center;
+                }
+                /* Row 5 */
+                .Row5{justify-content: space-evenly;flex-wrap: wrap;row-gap: 40px;
+                }
+                /* Row 6 */
+                .Row6{justify-content: space-evenly;flex-wrap: wrap; row-gap: 30px;}
+                /* Row 7 */
+                .Row7{flex-wrap: wrap;flex-direction: column;justify-content: center;align-items: center;}
+                .Row7 .graphics{width: 100%;margin-left: 0%;}
+                .Row7 .graphics ul li img {width: 100%;}
+                .Row7 .form{width: 30%;margin-right: 0%; height: auto;}
+                /* Row 8 */
+                .Row8 .adobPhotoshop{width: 100%;margin-left: 0%; margin-right: 0%;}
+                .Row8 .adobPhotoshop ul li img{width: 100%;}
+                
+                
+               
+                /* Row 9 */
+                    .Row9 { padding: auto;
+                    flex-direction: row; 
+                    align-items: center; 
+                }
+    
+                .Row9 .Footer {
+                
+                    width: auto; 
+                    height: auto; 
+                    margin-bottom: 20px; 
+                }
+            }
+
+
+    </style>
+</head>
+<body>
+    <div class="Row1">
+       
+        <div class="HelpLine">
+            <table>
+                <tr>
+                    <td style="width: 30px;;"><img src="Project\Images\HelpLine\help1.png" alt="" width="25px" height="25px"></td>
+                    <td colspan="2">111-000-111</td>
+                    <td style="width: 30px; text-align: center;"><img src="Project\Images\HelpLine\help1.png" alt="" width="25px" height="25px"></td>
+                    <td>info@pnytraining.com</td>
+                </tr>
+            </table>
+        </div>
+        <div class="SocialMediaIcon">
+            <ul>
+                <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="Row2">
+        <div class="Logo"><img src="Project\Images\Logo\Logo.png" alt="" width="50px;" height="50px;"></div>
+        <div class="Address">
+            <ul>
+                <li>Suit# 03, 2nd Floor</li>
+                <li>Talha Heights, 6th Road,RWP</li>
+                <li>0333-2525251</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="Row3">
+        <div class="Menu">
+            <ul>
+                <center>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Graphic Designing.html">Graphics Designing</a></li>
+                    <li><a href="FullStackDevelopment.html">Full Stack Development </a></li>
+                    <li><a href="AppDevelopment.html">App Development</a></li>
+                    <li><a href="Amazon.html">Amazon</a></li>
+                    <li><a href="DigitalMarketing.html">Digital Marketing</a></li>
+                    <li><a href="ArchitectureDesigning.html">Architecture Designing</a></li>
+                    
+                    <li><a href="Gallery.html">Gallery</a></li>
+                   
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                </center>
+                
+            </ul>
+        </div>
+    </div>
+
+    <div class="Row4">
+        <div class="MainImage"><img  src="Project\Images\Banner\Banner1.png" alt=""  width="100%"></div>
+    </div>
+
+    <div class="Row5">
+        <div class="PnyOption">
+            <center>
+                <img src="Project\Images\PnyOption\01.png" alt="">
+                <h3>Unlimited Access</h3>
+                <p>Choose What you’d like to learn from our extensive subscription library.</p>
+            </center>
+        </div>
+        <div class="PnyOption">
+            <center>
+                <img src="Project\Images\PnyOption\02.png" alt="">
+                <h3>Learn Anywhere</h3>
+                <p>Learn from industry experts who are passionate about teaching.</p>
+            </center>
+        </div>
+        <div class="PnyOption">
+            <center>
+                <img src="Project\Images\PnyOption\03.png" alt="">
+                <h3>Customizability</h3>
+                <p>Switch between your computer, tablet, or mobile device.</p>
+            </center>
+        </div>
+    </div>
+
+    <div class="Row6">
+        <div class="Msg">
+            <h2>Our Institute</h2>
+            <p>
+                PNY Trainings is the first choice of students who want to excel in the field of Internet Marketing. PNY Trainings consists of Top Level Trainers who are adept in the fields of Internet Marketing. We are the pioneer institute that started comprehensive Training for the benefit of students. Since our launch, thousands of students are trained and secured good jobs in the expanding IT industry as we all know. Contact us and secure your seat for upcoming training, events, and seminars.
+            </p>
+            <h3>CEO Message</h3>
+            <p>
+                Diversity and inclusion of thought, skill, knowledge, and culture make PNY Trainings more competitive, more resilient, and better. Diversity strengthens us by promoting unique viewpoints and challenging each of us, every day, to think beyond our traditional frames of reference. We are committed to building a talented and diverse workforce, and to creating an environment in which every STUDENT has the opportunity to excel based on his or her performance. We believe the best way to learn is by putting your skills to use. I warmly welcome you to visit by contacting us, and discover firsthand what makes PNY Trainings special.
+                <br>
+                -Wahab Yunus (CEO PNY Trainings)
+            </p>
+            <h3>Our Vision</h3>
+            <p>
+                To enhance our students’ skills technically, intellectually & digitally,
+                enabling them to attain excellence in their professional fields.
+            </p>
+
+
+        </div>
+        <div class="ImgMsg">
+            <img style="border-radius: 10px;;box-shadow: 0px 5px 5px #888888;" src="Project\Images\PnyMsg\PnyMsg.jpg" alt="" width="500px" height="500px">
+        </div>
+    </div>
+    
+    <div class="Row7">
+        <div class="graphics">
+            <h1 style="font-size: 55px; border-bottom: 5px solid red;width: 500px;">Digital Marketing:-</h1>
+            <ul>
+                <li><img src="Project/Images/Canva/Digital.avif" alt="" ></li>
+                <li> <h2>Digital Marketing Course Outline</h2> <br>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">Introduction to DigitalMarketing</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">OOPs Concepts</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">Inheritance in detail</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">.jar file extension</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">Packages & interfaces</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">Exception handling</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">Multi threading (Thread class & Runnable Interface)</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>Introduction to Android and iOS?</strong></p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">Setting up development environment</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">Resources</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">R.java</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">Assets</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">Layouts</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">drawable [dip, dp, sip, sp, px]</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">drawable resources for shapes, gradients (selectors)</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">tyles.xml, style attribute in layout file</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">Applying themes via xml and manifest file</p>
+                
+                
+                </li>
+                <li>
+                    <h2>Module-02 DigitalMarketing Basics </h2></li>
+                    <li>
+                    <p style="border: 1px solid lightgray;border-radius: 1px;">Configuring MobileApp Menu & SDK</p>
+                    <p style="border: 1px solid lightgray;border-radius: 1px;">Option menu</p>
+                    <p style="border: 1px solid lightgray;border-radius: 1px;">Context menu</p>
+                    <p style="border: 1px solid lightgray;border-radius: 1px;">Sub menu
+                    </p>
+                    <p style="border: 1px solid lightgray;border-radius: 1px;">Menu from xml
+                    </p>
+                    <p style="border: 1px solid lightgray;border-radius: 1px;">Menu via code
+                    </p>
+                    <p style="border: 1px solid lightgray;border-radius: 1px;">Intents & Intent Filters
+                    </p>
+                    <p style="border: 1px solid lightgray;border-radius: 1px;">Explicit Intents
+                    </p>
+                    <p style="border: 1px solid lightgray;border-radius: 1px;">Implicit intents
+                    </p>
+                    <p style="border: 1px solid lightgray;border-radius: 1px;">Activity Life Cycle
+                    </p>
+                    <p style="border: 1px solid lightgray;border-radius: 1px;">Communication between Activities
+                    </p>
+                    <p style="border: 1px solid lightgray;border-radius: 1px;">AndroidManifest.xml
+                    </p>
+                    <p style="border: 1px solid lightgray;border-radius: 1px;">uses-permission & uses-sdk
+                    </p>
+                    <p style="border: 1px solid lightgray;border-radius: 1px;">Building 1st Mobile Application
+                    </p>
+                    <p style="border: 1px solid lightgray;border-radius: 1px;">UI Components
+                    </p>
+                    <p style="border: 1px solid lightgray;border-radius: 1px;">Basic UI design
+                    </p>
+                    <p style="border: 1px solid lightgray;border-radius: 1px;">Deploying an Android application on physical device
+                    </p>
+                    <p style="border: 1px solid lightgray;border-radius: 1px;">(.apk) file extension
+                    </p>
+                    <p style="border: 1px solid lightgray;border-radius: 1px;">Testing on Real Devices
+                    </p>
+                    <p style="border: 1px solid lightgray;border-radius: 1px;">Time and Date
+                    </p>
+                    <p style="border: 1px solid lightgray;border-radius: 1px;">AlertDialogs
+                    </p>
+                    <p style="border: 1px solid lightgray;border-radius: 1px;">Toast</p>
+                    <p style="border: 1px solid lightgray;border-radius: 1px;">Popup</p>
+                    <p style="border: 1px solid lightgray;border-radius: 1px;">Tabs and Tab Activity
+                    </p>
+                    </li>
+                    <li><h2>Module-03 DigitalMarketing Advanced (Final Project – APK)</h2></li>
+                    <li>
+                        <p style="border: 1px solid lightgray;border-radius: 1px;">Configuration Mobile UI and Advanced Features</p>
+                        <p style="border: 1px solid lightgray;border-radius: 1px;">Splash Screen</p>
+                        <p style="border: 1px solid lightgray;border-radius: 1px;">Accessing Phone services (Call, SMS)</p>
+                        <p style="border: 1px solid lightgray;border-radius: 1px;">Adding the Camera Interface, and setting up Images</p>
+                        <p style="border: 1px solid lightgray;border-radius: 1px;">playing media</p>
+                        <p style="border: 1px solid lightgray;border-radius: 1px;">Designing Calculator (Standard engineering equation only)</p>
+                        <p style="border: 1px solid lightgray;border-radius: 1px;">SQLite Programming</p>
+                        <p style="border: 1px solid lightgray;border-radius: 1px;">SQLiteOpenHelper</p>
+                        <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>Working with SQLiteDatabse</strong></p>
+                        <p style="border: 1px solid lightgray;border-radius: 1px;">User input ability to Calculator</p>
+                    </li>
+                    <li><h2>Course Benefits</h2></li>
+                    <li>
+                        <p style="border: 1px solid lightgray;border-radius: 1px;">Omni Certified Android Developer – Fed. Govt Accredited Certificate</p> 
+                        <p style="border: 1px solid lightgray;border-radius: 1px;">Professional Training – your chance to became a Freelancer</p>
+                        <p style="border: 1px solid lightgray;border-radius: 1px;">Live MobileApps Projects</p>
+                        <p style="border: 1px solid lightgray;border-radius: 1px;">Covers Android / Windows Technology</p>
+                        <p style="border: 1px solid lightgray;border-radius: 1px;">Practical Training</p>
+                        <p style="border: 1px solid lightgray;border-radius: 1px;">Build your own Mobile Apps</p>
+                        <p style="border: 1px solid lightgray;border-radius: 1px;">Learn From Experience Developer</p>
+                        <p style="border: 1px solid lightgray;border-radius: 1px;">International freelance Job Market</p>
+                        <p style="border: 1px solid lightgray;border-radius: 1px;">100% – Internship Opportunity</p>
+                    </li>
+            </ul>
+
+        </div>
+
+        <div class="form">
+          
+            <h1>Registration Form</h1>
+       
+            <form>
+              <label for="username">Username:</label><br>
+              <input type="text" id="username" name="username" placeholder="Enter your username"><br>
+              <label for="email">Email:</label><br>
+              <input type="email" id="email" name="email" placeholder="Enter your email"><br>
+              <label for="password">Password:</label><br>
+              <input type="password" id="password" name="password" placeholder="Enter your password"><br>
+              <button type="submit">Register</button>
+            
+            </form>
+        </div>
+    </div>
+
+    <div class="Row8">
+       <div class="adobPhotoshop">
+        <h1 style="font-size: 55px; border-bottom: 5px solid red;width: 400px;">DigitalMarketing</h1>
+        <ul>
+            <li><img src="Project/Images/Canva/digital advanced.jpeg" alt="" ></li>
+            <li><p>The main objective of launching our sophisticated Front End Web Developer Course in Lahore was to provide students with specialized knowledge and abilities that will help them create and develop numerous websites and applications. First, by introducing you to web editors and providing you with a comprehensive understanding of HTML, CSS, and JavaScript, this course will help you acquire an understanding of web concepts and terminologies. HTML. As part of the Front End Web Developer course, students will master the fundamentals of CSS and gain a grasp of various stylistic properties by developing effective color schemes. The fundamentals of JavaScript, including variables, arrays, and operators, as well as JavaScript functions, conditionals, and loops, will be covered in the Lahore Front End Web Developer course. This will need having a thorough understanding of array characteristics and methods, and how to use them.</p></li>
+            <li> <h2>Course Content:</h2> <br>
+            <p style="border: 1px solid lightgray;border-radius: 1px;">Introduction to Front End Web Development.</p>
+
+            <p style="border: 1px solid lightgray;border-radius: 1px;">HTML Fundamentals and Document Structure.</p>
+            <p style="border: 1px solid lightgray;border-radius: 1px;">CSS Styling and Layout Techniques.</p>
+            <p style="border: 1px solid lightgray;border-radius: 1px;">Responsive Web Design Principles.</p>
+            <p style="border: 1px solid lightgray;border-radius: 1px;">Introduction to JavaScript.</p>
+            <p style="border: 1px solid lightgray;border-radius: 1px;">DOM Manipulation and Event Handling.</p>
+            <p style="border: 1px solid lightgray;border-radius: 1px;">Basics of Version Control (Git).</p>
+            <p style="border: 1px solid lightgray;border-radius: 1px;">CSS Preprocessors (e.g., Sass or Less).</p>
+            <p style="border: 1px solid lightgray;border-radius: 1px;">Frontend Frameworks (e.g., Bootstrap).</p>
+            <p style="border: 1px solid lightgray;border-radius: 1px;">JavaScript Libraries (e.g., jQuery).</p>
+            <p style="border: 1px solid lightgray;border-radius: 1px;">Introduction to Web Accessibility.</p>
+            <p style="border: 1px solid lightgray;border-radius: 1px;">Web Performance Optimization Techniques.</p>
+            <p style="border: 1px solid lightgray;border-radius: 1px;">Cross-Browser Compatibility Testing.</p>
+            <p style="border: 1px solid lightgray;border-radius: 1px;">Basic SEO Principles for Web Development.</p>
+            <p style="border: 1px solid lightgray;border-radius: 1px;">Final Project and Portfolio Showcase.</p>
+            <li><h3>Who is this program for?</h3></li>
+            <li><p>Development services students Those that are interested in learning more about web development employees of software houses and businesses focused on web development who desire to advance their knowledge in this area. Anyone interested in a good certification in front end web developer in Lahore or Pakistan who is a professional already working as a web developer and is prepared to master the newest tools and techniques of this trade.</p></li>
+            <li><h3>Career Opportunity</h3></li>
+            <li><p>Front End developers have a high demand in organizations that work with front End is that being a framework that helps develop cross-platform applications, it helps organizations cut down on development costs and save time.</p> </li>
+        </ul>
+       </div>
+    </div>
+
+ 
+ 
+  
+
+     <div class="Row11">
+        <h1>Other Courses</h1>
+       <div class="othercourses">
+           <div class="multiple">
+               <a href="FullStackDevelopment.html"><img src="Project/Images/Canva/1.png" alt=""></a>  
+           </div>
+           <div class="multiple">
+               <a href="Graphic Designing.html"><img src="Project/Images/Canva/Graphics.jpeg" alt=""></a>
+           </div>
+           <div class="multiple">
+               <a href=""><img src="Project/Images/Canva/4.jpeg" alt=""></a>
+           </div>
+           <div class="multiple">
+               <a href=""><img src="Project/Images/Canva/5.jpeg" alt=""></a>
+           </div>
+         
+       </div>
+
+    </div>
+ 
+
+
+
+
+
+
+    <div class="Row9">
+        <div class="Footer">
+            <table>
+                <tr>
+                    <td colspan="2"><h3>Head Office</h3></td>
+                </tr>
+                <tr>
+                    <td style="width: 50px; text-align: left;;"><i class="fa-solid fa-building-columns"></i></td>
+                    <td>Office # 1, Level # 14, Arfa Software Technology Park, Ferozepur Road Lahore, Pakistan.</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-phone-volume"></i></td>
+                    <td>03041111774</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-brands fa-whatsapp"></i></td>
+                    <td>0320 1443744</td>
+                </tr>
+                
+            </table>
+        </div>
+        <div class="Footer">
+            <table>
+                <tr>
+                    <td colspan="2"><h3>Rawalpindi Branch</h3></td>
+                </tr>
+                <tr>
+                    <td style="width: 50px; text-align: left;;"><i class="fa-solid fa-building-columns"></i></td>
+                    <td>Office # 102, Floor #1 Talha Heights Plot # 21-D, 6th Road Satellite Town,Rawalpindi</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-phone-volume"></i></td>
+                    <td>0309-7772260</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-brands fa-whatsapp"></i></td>
+                    <td>0309-7774685</td>
+                </tr>
+            </table>
+        </div>
+        <div class="Footer">
+            <ul>
+                <center>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Graphics Designing</a></li>
+                    <li><a href="">Full Stack Development</a></li>
+                    <li><a href="">App Development</a></li>
+                    <li><a href="">Amazon</a></li>
+                    <li><a href="">Digital Marketing</a></li>
+                </center>
+            </ul>
+        </div>
+        <div class="Footer">
+            <ul>
+                <center>
+                    <li><a href="">Architecture Designing</a></li>    
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li style="display: inline-block; "><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li style="display: inline-block;"><a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li style="display: inline-block;"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li style="display: inline-block;"><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
+                </center>
+            </ul>
+        </div>
+       
+    </div>
+
+
+    <div class="Row10">
+        <div class="CopyRight"><h3>This website is copyright to Usama Tariq</h3></div>
+    </div>
+</body>
+</html>

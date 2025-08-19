@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <script src="https://kit.fontawesome.com/115eb0dbb8.js" crossorigin="anonymous"></script>
+    <style>
+        *{margin: 0px; padding: 0px; box-sizing: border-box; }
+        i{ color: white; }
+        i:hover{ color:orange;}
+        
+        .Row1{background-color: rgb(48, 40, 40); display: flex;;justify-content:space-between; align-items: center;;  margin-bottom: 5px;;box-shadow: 0px 5px 5px #888888;}
+       
+        .Row1 .HelpLine{   margin-left: 5%;;color: white; font-weight: bold;;}
+        
+        .Row1 .SocialMediaIcon{padding: 5px;; margin-right: 5%;;}
+        .Row1 .SocialMediaIcon ul{list-style-type: none;;}
+        .Row1 .SocialMediaIcon ul li{display: inline-block; border: 2px solid white; padding: 5px;; font-weight: bold; color:white; border-radius: 5px;;}
+
+        .Row2{ display: flex;;justify-content:space-between; align-items: center;;margin-bottom: 5px;; }
+        .Row2 .Logo{ margin-left: 5%;;}
+        .Row2 .Address{ margin-right: 4%;;}
+        .Row2 .Address ul{ list-style-type: none;;}
+        .Row2 .Address ul li{line-height: 1.3;font-weight: bold; color:black; font-size: 12px;;}
+
+        .Row3{ background-color:lightgray; justify-content: center; display: flex;box-shadow: 0px 5px 5px #888888;}
+        .Row3 .Menu{  width: 100%; }
+        .Row3 .Menu ul{ list-style-type: none;; padding: 5px;; }
+        .Row3 .Menu ul li{display: inline-block; margin: 10px;;}
+        .Row3 .Menu ul li a{ text-decoration: none;; font-weight: bold; color: black;; padding: 5px;; font-size: 14px;}
+        .Row3 .Menu ul li a:hover{border-bottom: 5px solid rgb(235, 96, 16);}
+
+        .Row4{  display: flex; justify-content: center;;margin-top: 10px;;}
+        .Row4 .MainImage{   background-size: cover; background-repeat: no-repeat;;background-size: auto; }
+
+        .Row5{display: flex; justify-content:center;margin-bottom: 80px; column-gap: 50px;; margin-top: 80px;}
+        .Row5 >.PnyOption{  width: 300px; height: 250px; line-height: 2.5; padding: 20px;; border-radius: 25px;; background-color: rgb(235, 235, 235);;box-shadow: 0px 5px 5px #888888; transition: transform 2s ease;}
+        .Row5 >.PnyOption:hover{transform: scale(1.1);}
+
+
+        .Row6{display: flex; border-top:5px solid red; justify-content: center; column-gap: 150px;; padding: 25px;;border-bottom: 5px solid red;}
+        .Row6 .Msg{ width: 500px;; text-align: justify; font-size: 14px;; line-height: 1.5;}
+        .Row6 .ImgMsg{ width: 500px;; }
+
+
+     
+
+                    /* Row 7 editing */
+       
+        .Row7 h1{text-align: center; font-size: 50px;margin-bottom: 35px;margin-top: 35px;}
+        .Row7 .Gallery{padding: 10px; display: flex;justify-content: center;flex-wrap: wrap;column-gap: 50px;row-gap: 30px;margin-left: 10%; margin-right:10% ;margin-top: 15px;align-items: center;}
+        .Row7 .Gallery .images{border: 5px solid lightgray;padding:45px; width: 300px;height: 250px;align-items: center;display: flex;justify-content: center;box-shadow: 0px 5px 5px #888888; transition: transform 2s ease;}
+        .Row7 .Gallery .images:hover{transform: scale(1.1);}
+        .Row7 .Gallery .images img{width: 300px; height: 250px; }
+                            /* Row 8 Editing */
+          .Row8{display: flex; justify-content: center;align-items: center;}
+          .Row8 .heading{margin-top:40px;}
+          .Row8 .heading h1{font-size: 100px;border-bottom:5px solid red ;}
+      
+
+
+
+
+    
+
+
+
+        .Row9{display: flex; justify-content: center; background-color: rgb(59, 56, 56); flex-wrap: wrap;margin-top: 35px;; }
+        .Row9 .Footer{   width: 25%; height: 400px;; }
+        .Row9 .Footer ul{ list-style-type: none;; padding: 50px;;}
+        .Row9 .Footer ul li{line-height: 3; }
+        .Row9 .Footer ul li a{color:white; text-decoration: none;;}
+        .Row9 .Footer ul li a:hover{color:orange ;}
+
+        .Row9 .Footer table{ line-height: 2.5; padding: 50px; color: white;; font-size: 14px;;}
+        .Row9 .Footer table i{ font-size: 20px;}
+        .Row9 .Footer i{ font-size: 28px; margin: 5px;;}
+
+        .Row10{ display: flex; justify-content: center; background-color:lightgray; }
+        .Row10 .CopyRight{ line-height: 1.5; padding: 15px;;}
+
+           /* All Media Query */
+            /* All media Quries  here */
+            @media(max-width:576px){
+                /* Row 1 */
+                .Row1 {
+                    flex-direction: column;
+                }
+                /* Row2 */
+                .Row2{flex-direction: column; justify-content: center;align-items: center;
+                }
+                .Row2 .Logo{margin-left: 0%;}
+                .Row2 .Address{text-align: center;margin-right: 0%;}
+                /* Row3 */
+                .Row3 .Menu ul li{flex-direction: column;display: block;align-items: center;justify-content: center;
+                }
+                /* Row 5 */
+                .Row5{justify-content: space-evenly;flex-wrap: wrap;row-gap: 40px;
+                }
+                /* Row 6 */
+                .Row6{justify-content: space-evenly;flex-wrap: wrap; row-gap: 30px;}
+                /* Row 7 */
+                .Row7{flex-wrap: wrap;flex-direction: column;justify-content: center;align-items: center; }
+                .Row7 h1{font-size: 35px;}
+               
+                /* Row 8 */
+               
+                /* Row 9 */
+                    .Row9 { padding: auto;
+                    flex-direction: column; 
+                    align-items: center; 
+                }
+    
+                .Row9 .Footer {
+                
+                    width: 100%; 
+                    height: auto; 
+                    margin-bottom: 20px; 
+                }
+        }
+        /* Media 786px */
+       
+            @media(max-width:786px){
+                /* Row 1 */
+                .Row1 {
+                    flex-direction: column;
+                }
+                /* Row2 */
+                .Row2{flex-direction: column; justify-content: center;align-items: center;
+                }
+                /* Row3 */
+                .Row3 .Menu ul li{flex-direction: column;display: block;align-items: center;justify-content: center;
+                }
+                /* Row 5 */
+                .Row5{justify-content: space-evenly;flex-wrap: wrap;row-gap: 40px;
+                }
+                /* Row 6 */
+                .Row6{justify-content: space-evenly;flex-wrap: wrap; row-gap: 30px;}
+                /* Row 7 */
+                .Row7 .Gallery{justify-content: space-evenly;flex-wrap: wrap; margin-left: 0%; margin-right: 0%;}
+                .Row7 h1{font-size: 35px;}
+               
+                /* Row 8 */
+               
+                /* Row 9 */
+                    .Row9 { padding: auto;
+                    flex-direction: row; 
+                    align-items: center; 
+                }
+    
+                .Row9 .Footer {
+                
+                    width: auto; 
+                    height: auto; 
+                    margin-bottom: 20px; 
+                }
+            }
+                /* media query 1200px */
+            @media(max-width:1200px){
+                .Row7 .Gallery{
+                    margin-left: 0%;margin-right: 0%;flex-wrap: wrap;
+                }
+            }
+
+    </style>
+</head>
+<body>
+    <div class="Row1">
+       
+        <div class="HelpLine">
+            <table>
+                <tr>
+                    <td style="width: 30px;;"><img src="Project\Images\HelpLine\help1.png" alt="" width="25px" height="25px"></td>
+                    <td colspan="2">111-000-111</td>
+                    <td style="width: 30px; text-align: center;"><img src="Project\Images\HelpLine\help1.png" alt="" width="25px" height="25px"></td>
+                    <td>info@pnytraining.com</td>
+                </tr>
+            </table>
+        </div>
+        <div class="SocialMediaIcon">
+            <ul>
+                <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="Row2">
+        <div class="Logo"><img src="Project\Images\Logo\Logo.png" alt="" width="50px;" height="50px;"></div>
+        <div class="Address">
+            <ul>
+                <li>Suit# 03, 2nd Floor</li>
+                <li>Talha Heights, 6th Road,RWP</li>
+                <li>0333-2525251</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="Row3">
+        <div class="Menu">
+            <ul>
+                <center>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Graphic Designing.html">Graphics Designing</a></li>
+                    <li><a href="FullStackDevelopment.html">Full Stack Development </a></li>
+                    <li><a href="AppDevelopment.html">App Development</a></li>
+                    <li><a href="Amazon.html">Amazon</a></li>
+                    <li><a href="DigitalMarketing.html">Digital Marketing</a></li>
+                    <li><a href="ArchitectureDesigning.html">Architecture Designing</a></li>
+                    
+                    <li><a href="Gallery.html">Gallery</a></li>
+                
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                </center>
+                
+            </ul>
+        </div>
+    </div>
+
+    <div class="Row4">
+        <div class="MainImage"><img  src="Project\Images\Banner\Banner1.png" alt=""  width="100%"></div>
+    </div>
+
+    <div class="Row5">
+        <div class="PnyOption">
+            <center>
+                <img src="Project\Images\PnyOption\01.png" alt="">
+                <h3>Unlimited Access</h3>
+                <p>Choose What you’d like to learn from our extensive subscription library.</p>
+            </center>
+        </div>
+        <div class="PnyOption">
+            <center>
+                <img src="Project\Images\PnyOption\02.png" alt="">
+                <h3>Learn Anywhere</h3>
+                <p>Learn from industry experts who are passionate about teaching.</p>
+            </center>
+        </div>
+        <div class="PnyOption">
+            <center>
+                <img src="Project\Images\PnyOption\03.png" alt="">
+                <h3>Customizability</h3>
+                <p>Switch between your computer, tablet, or mobile device.</p>
+            </center>
+        </div>
+    </div>
+
+    <div class="Row6">
+        <div class="Msg">
+            <h2>Our Institute</h2>
+            <p>
+                PNY Trainings is the first choice of students who want to excel in the field of Internet Marketing. PNY Trainings consists of Top Level Trainers who are adept in the fields of Internet Marketing. We are the pioneer institute that started comprehensive Training for the benefit of students. Since our launch, thousands of students are trained and secured good jobs in the expanding IT industry as we all know. Contact us and secure your seat for upcoming training, events, and seminars.
+            </p>
+            <h3>CEO Message</h3>
+            <p>
+                Diversity and inclusion of thought, skill, knowledge, and culture make PNY Trainings more competitive, more resilient, and better. Diversity strengthens us by promoting unique viewpoints and challenging each of us, every day, to think beyond our traditional frames of reference. We are committed to building a talented and diverse workforce, and to creating an environment in which every STUDENT has the opportunity to excel based on his or her performance. We believe the best way to learn is by putting your skills to use. I warmly welcome you to visit by contacting us, and discover firsthand what makes PNY Trainings special.
+                <br>
+                -Wahab Yunus (CEO PNY Trainings)
+            </p>
+            <h3>Our Vision</h3>
+            <p>
+                To enhance our students’ skills technically, intellectually & digitally,
+                enabling them to attain excellence in their professional fields.
+            </p>
+
+
+        </div>
+        <div class="ImgMsg">
+            <img style="border-radius: 10px;;box-shadow: 0px 5px 5px #888888;" src="Project\Images\PnyMsg\PnyMsg.jpg" alt="" width="500px" height="500px">
+        </div>
+    </div>
+    
+    <div class="Row8">
+        <div class="heading">
+            <h1>GALLERY</h1>
+        </div>
+    </div>     
+    
+    <div class="Row7">
+        
+        <h1>FUll Stack Development</h1> 
+        <div class="Gallery">
+            <div class="images"> <img src="Project/Images/Gallery/fullstack1.jpeg" alt=""> </div>
+            <div class="images"><img src="Project/Images/Gallery/fullstack2.png" alt=""></div>
+            <div class="images"><img src="Project/Images/Gallery/fullstack3.jpeg" alt=""></div>
+            <div class="images"><img src="Project/Images/Gallery/fullstack4.jpeg" alt=""></div>
+            <div class="images"><img src="Project/Images/Gallery/fullstack5.jpeg" alt=""></div>
+            <div class="images"><img src="Project/Images/Gallery/fullstack6.png" alt=""></div>
+          
+        </div>
+            <h1>App Development</h1>
+        <div class="Gallery">
+            <div class="images"><img src="Project/Images/Gallery/app1.jpeg" alt=""></div>
+            <div class="images"><img src="Project/Images/Gallery/app2.jpeg" alt=""></div>
+            <div class="images"><img src="Project/Images/Gallery/app3.jpeg" alt=""></div>
+            <div class="images"><img src="Project/Images/Gallery/app4.png" alt=""></div>
+            <div class="images"><img src="Project/Images/Gallery/app5.png" alt=""></div>
+            <div class="images"><img src="Project/Images/Gallery/app6.jpeg" alt=""></div>
+          
+        </div>
+        <h1>Graphic Desigining</h1>
+        <div class="Gallery">
+            <div class="images"><img src="Project/Images/Gallery/gra1.avif" alt=""></div>
+            <div class="images"><img src="Project/Images/Gallery/gra2.jpeg" alt=""> </div>
+            <div class="images"><img src="Project/Images/Gallery/gra3.jpeg" alt=""></div>
+            <div class="images"><img src="Project/Images/Gallery/gra4.jpeg" alt=""></div>
+            <div class="images"><img src="Project/Images/Gallery/gra5.jpeg" alt=""></div>
+            <div class="images"><img src="Project/Images/Gallery/gra6.webp" alt=""></div>
+          
+        </div>
+            <h1>Amazon</h1>
+        <div class="Gallery">
+            <div class="images"><img src="Project/Images/Gallery/am1.jpeg" alt=""></div>
+            <div class="images"><img src="Project/Images/Gallery/am2.jpeg" alt=""></div>
+            <div class="images"><img src="Project/Images/Gallery/am3.jpeg" alt=""></div>
+            <div class="images"><img src="Project/Images/Gallery/am4.jpeg" alt=""></div>
+            <div class="images"><img src="Project/Images/Gallery/am5.webp" alt=""></div>
+            <div class="images"><img src="Project/Images/Gallery/am6.webp" alt=""></div>
+          
+        </div>
+            <h1>Digital Marketing</h1>
+        <div class="Gallery">
+            <div class="images"><img src="Project/Images/Gallery/digi1.avif" alt=""></div>
+            <div class="images"><img src="Project/Images/Gallery/digi2.webp" alt=""></div>
+            <div class="images"><img src="Project/Images/Gallery/digi3.jpeg" alt=""></div>
+            <div class="images"><img src="Project/Images/Gallery/digi4.jpg" alt=""></div>
+            <div class="images"><img src="Project/Images/Gallery/digi5.jpg" alt=""></div>
+            <div class="images"><img src="Project/Images/Gallery/digi6.jpeg" alt=""></div>
+          
+        </div>
+            <h1>Architecture Designing</h1>
+            <div class="Gallery">
+                <div class="images"><img src="Project/Images/Gallery/ai1.jpeg" alt=""></div>
+                <div class="images"><img src="Project/Images/Gallery/ai2.jpeg" alt=""></div>
+                <div class="images"><img src="Project/Images/Gallery/ai3.webp" alt=""></div>
+                <div class="images"><img src="Project/Images/Gallery/ai4.jpeg" alt=""></div>
+                <div class="images"><img src="Project/Images/Gallery/ai5.jpeg" alt=""></div>
+                <div class="images"><img src="Project/Images/Gallery/ai6.webp" alt=""></div>
+              
+            </div>
+
+    </div>
+ 
+  
+  
+
+   
+
+
+
+
+
+
+    <div class="Row9">
+        <div class="Footer">
+            <table>
+                <tr>
+                    <td colspan="2"><h3>Head Office</h3></td>
+                </tr>
+                <tr>
+                    <td style="width: 50px; text-align: left;;"><i class="fa-solid fa-building-columns"></i></td>
+                    <td>Office # 1, Level # 14, Arfa Software Technology Park, Ferozepur Road Lahore, Pakistan.</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-phone-volume"></i></td>
+                    <td>03041111774</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-brands fa-whatsapp"></i></td>
+                    <td>0320 1443744</td>
+                </tr>
+                
+            </table>
+        </div>
+        <div class="Footer">
+            <table>
+                <tr>
+                    <td colspan="2"><h3>Rawalpindi Branch</h3></td>
+                </tr>
+                <tr>
+                    <td style="width: 50px; text-align: left;;"><i class="fa-solid fa-building-columns"></i></td>
+                    <td>Office # 102, Floor #1 Talha Heights Plot # 21-D, 6th Road Satellite Town,Rawalpindi</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-phone-volume"></i></td>
+                    <td>0309-7772260</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-brands fa-whatsapp"></i></td>
+                    <td>0309-7774685</td>
+                </tr>
+            </table>
+        </div>
+        <div class="Footer">
+            <ul>
+                <center>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Graphics Designing</a></li>
+                    <li><a href="">Full Stack Development</a></li>
+                    <li><a href="">App Development</a></li>
+                    <li><a href="">Amazon</a></li>
+                    <li><a href="">Digital Marketing</a></li>
+                </center>
+            </ul>
+        </div>
+        <div class="Footer">
+            <ul>
+                <center>
+                    <li><a href="">Architecture Designing</a></li>    
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li style="display: inline-block; "><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li style="display: inline-block;"><a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li style="display: inline-block;"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li style="display: inline-block;"><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
+                </center>
+            </ul>
+        </div>
+       
+    </div>
+
+
+    <div class="Row10">
+        <div class="CopyRight"><h3>This website is copyright to Usama Tariq</h3></div>
+    </div>
+</body>
+</html>

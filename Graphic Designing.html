@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GraphicsDesigning</title>
+    <script src="https://kit.fontawesome.com/115eb0dbb8.js" crossorigin="anonymous"></script>
+    <style>
+        *{margin: 0px; padding: 0px; box-sizing: border-box; }
+        i{ color: white; }
+        i:hover{ color:orange;}
+        
+        .Row1{background-color: rgb(48, 40, 40); display: flex;;justify-content:space-between; align-items: center;;  margin-bottom: 5px;;box-shadow: 0px 5px 5px #888888;}
+       
+        .Row1 .HelpLine{   margin-left: 5%;;color: white; font-weight: bold;;}
+        
+        .Row1 .SocialMediaIcon{padding: 5px;; margin-right: 5%;;}
+        .Row1 .SocialMediaIcon ul{list-style-type: none;;}
+        .Row1 .SocialMediaIcon ul li{display: inline-block; border: 2px solid white; padding: 5px;; font-weight: bold; color:white; border-radius: 5px;;}
+
+        .Row2{ display: flex;;justify-content:space-between; align-items: center;;margin-bottom: 5px;; }
+        .Row2 .Logo{ margin-left: 5%;;}
+        .Row2 .Address{ margin-right: 4%;;}
+        .Row2 .Address ul{ list-style-type: none;;}
+        .Row2 .Address ul li{line-height: 1.3;font-weight: bold; color:black; font-size: 12px;;}
+
+        .Row3{ background-color:lightgray; justify-content: center; display: flex;box-shadow: 0px 5px 5px #888888;}
+        .Row3 .Menu{  width: 100%; }
+        .Row3 .Menu ul{ list-style-type: none;; padding: 5px;; }
+        .Row3 .Menu ul li{display: inline-block; margin: 10px;;}
+        .Row3 .Menu ul li a{ text-decoration: none;; font-weight: bold; color: black;; padding: 5px;; font-size: 14px;}
+        .Row3 .Menu ul li a:hover{border-bottom: 5px solid rgb(235, 96, 16);}
+
+        .Row4{  display: flex; justify-content: center;;margin-top: 10px;;}
+        .Row4 .MainImage{   background-size: cover; background-repeat: no-repeat;;background-size: auto; }
+
+        .Row5{display: flex; justify-content:center;margin-bottom: 80px; column-gap: 50px;; margin-top: 80px;}
+        .Row5 >.PnyOption{  width: 300px; height: 250px; line-height: 2.5; padding: 20px;; border-radius: 25px;; background-color: rgb(235, 235, 235);;box-shadow: 0px 5px 5px #888888; transition: transform 2s ease;}
+        .Row5 >.PnyOption:hover{transform: scale(1.1);}
+
+
+        .Row6{display: flex; border-top:5px solid red; justify-content: center; column-gap: 150px;; padding: 25px;;}
+        .Row6 .Msg{ width: 500px;; text-align: justify; font-size: 14px;; line-height: 1.5;}
+        .Row6 .ImgMsg{ width: 500px;; }
+
+                    /* Row 7 editing */
+        .Row7{display: flex; justify-content: center; border-top:5px solid red;   padding: 10px; column-gap: 40px;}
+        .Row7 .graphics{ width: 60%;margin-left: 10%;}
+        .Row7 .graphics ul li img{border: 2px solid lightgray; width:800px ;height:300px}
+        .Row7 .graphics ul{list-style-type:none ;}
+        .Row7 .graphics ul li{margin-top: 15px; }
+
+
+
+        .Row7 .form{ border:2px solid lightgray;padding: 10px; width: 30%;margin-right:10%; padding: 20px;background-color: #f0f0f0;
+        border-radius: 10px; display: flex;flex-direction: column;height: 350px; box-shadow: 0px 5px 5px #888888; margin-top: 15px;transition: transform 1s ease;}
+        .Row7 .form:hover{transform: scale(1.1);}
+
+            .Row7 .form h1 {text-align: center;margin-bottom: 20px;}
+
+
+            .Row7 .form label {font-weight: bold;}
+            .Row7 .form input { padding: 10px; margin-bottom: 10px;border: 1px solid #ccc;border-radius: 5px;}
+            .Row7 .form button {padding: 10px;background-color: rgb(192, 192, 192);color: #0b0808;
+             border: none; border-radius: 5px;cursor: pointer;transition: transform 2s ease; /* Hover effect */}
+             .Row7 .form button:hover {background-color: orange; color: white;/* Change color on hover */}
+        
+                            /* Row 8 Editing */
+         
+        .Row8{ display: flex;justify-content: center;align-items: center; padding-top: 45px;  }
+        .Row8 .adobPhotoshop{width: 80%;margin-left: 10%;margin-right: 32%;}
+        .Row8 .adobPhotoshop ul li img{border: 2px solid lightgray; width:700px ;height:300px}
+        .Row8 .adobPhotoshop ul{list-style-type:none ;}
+        .Row8 .adobPhotoshop ul li{margin-top: 15px; }
+
+        .Row11{padding: 35px; background-color: #f0f0f0;margin-top: 35px;}
+        .Row11 h1{text-align: center;font-size:55px ;}
+        .Row11 .othercourses{  display: flex;justify-content: center;padding: 45px;flex-wrap: wrap;  row-gap: 29px;column-gap: 36px;margin-left: 5%; margin-right: 5%;}
+        .Row11 .multiple{  padding: 15px;width: 350px; height: 250px; display: flex; justify-content: center;align-items: center;box-shadow: 0px 5px 5px #888888; transition: transform 2s ease;}
+        .Row11 .multiple:hover{transform: scale(1.1);}
+        .Row11 .multiple a img{width: 350px;height: 250px; }
+
+
+
+
+
+        .Row9{display: flex; justify-content: center; background-color: rgb(59, 56, 56); flex-wrap: wrap;margin-top: 35px;; }
+        .Row9 .Footer{   width: 25%; height: 400px;; }
+        .Row9 .Footer ul{ list-style-type: none;; padding: 50px;;}
+        .Row9 .Footer ul li{line-height: 3; }
+        .Row9 .Footer ul li a{color:white; text-decoration: none;;}
+        .Row9 .Footer ul li a:hover{color:orange ;}
+
+        .Row9 .Footer table{ line-height: 2.5; padding: 50px; color: white;; font-size: 14px;;}
+        .Row9 .Footer table i{ font-size: 20px;}
+        .Row9 .Footer i{ font-size: 28px; margin: 5px;;}
+
+        .Row10{ display: flex; justify-content: center; background-color:lightgray; }
+        .Row10 .CopyRight{ line-height: 1.5; padding: 15px;;}
+
+
+        /* All Media Query */
+            /* All media Quries  here */
+            @media(max-width:576px){
+                /* Row 1 */
+                .Row1 {
+                    flex-direction: column;
+                }
+                /* Row2 */
+                .Row2{flex-direction: column; justify-content: center;align-items: center;
+                }
+                .Row2 .Logo{margin-left: 0%;}
+                .Row2 .Address{text-align: center;margin-right: 0%;}
+                /* Row3 */
+                .Row3 .Menu ul li{flex-direction: column;display: block;align-items: center;justify-content: center;
+                }
+                /* Row 5 */
+                .Row5{justify-content: space-evenly;flex-wrap: wrap;row-gap: 40px;
+                }
+                /* Row 6 */
+                .Row6{justify-content: space-evenly;flex-wrap: wrap; row-gap: 30px;}
+                /* Row7 */
+                .Row7{flex-wrap: wrap;flex-direction: column;justify-content: center;align-items: center;}
+                .Row7 .graphics{width: 100%;margin-left: 0%;}
+                .Row7 .graphics ul li img {width: 100%;}
+                .Row7 .form{width: 100%;margin-right: 0%;}
+                /* Row 8 */
+                .Row8 .adobPhotoshop{width: 100%;margin-left: 0%; margin-right: 0%;}
+                .Row8 .adobPhotoshop ul li img{width: 100%;}
+                
+
+                /* Row 9 */
+                    .Row9 { padding: auto;
+                    flex-direction: column; 
+                    align-items: center; 
+                }
+    
+                .Row9 .Footer {
+                
+                    width: 100%; 
+                    height: auto; 
+                    margin-bottom: 20px; 
+                }
+        }
+
+        /* Media 786px*/
+        @media(max-width:786px){
+             /* Row 1 */
+             .Row1 {
+                    flex-direction: column;
+                }
+                /* Row2 */
+                .Row2{flex-direction: column; justify-content: center;align-items: center;
+                }
+                /* Row3 */
+                .Row3 .Menu ul li{flex-direction: column;display: block;align-items: center;justify-content: center;
+                }
+                /* Row 5 */
+                .Row5{justify-content: space-evenly;flex-wrap: wrap;row-gap: 40px;
+                }
+                /* Row 6 */
+                .Row6{justify-content: space-evenly;flex-wrap: wrap; row-gap: 30px;}
+                /* Row7 */
+                .Row7{flex-wrap: wrap;flex-direction: column;justify-content: center;align-items: center;}
+                .Row7 .graphics{width: 100%;margin-left: 0%;}
+                .Row7 .graphics ul li img {width: 100%;}
+                .Row7 .form{width: 30%;margin-right: 0%; height: auto;}
+                /* Row 8 */
+                .Row8 .adobPhotoshop{width: 100%;margin-left: 0%; margin-right: 0%;}
+                .Row8 .adobPhotoshop ul li img{width: 100%;}
+               
+
+                /* Row 9 */
+                    .Row9 { padding: auto;
+                    flex-direction: row; 
+                    align-items: center; 
+                }
+    
+               .Row9 .Footer {
+                
+                    width: auto; 
+                    height: auto; 
+                    margin-bottom: 20px; 
+                }
+        
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="Row1">
+       
+        <div class="HelpLine">
+            <table>
+                <tr>
+                    <td style="width: 30px;;"><img src="Project\Images\HelpLine\help1.png" alt="" width="25px" height="25px"></td>
+                    <td colspan="2">111-000-111</td>
+                    <td style="width: 30px; text-align: center;"><img src="Project\Images\HelpLine\help1.png" alt="" width="25px" height="25px"></td>
+                    <td>info@pnytraining.com</td>
+                </tr>
+            </table>
+        </div>
+        <div class="SocialMediaIcon">
+            <ul>
+                <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com"><i class="fa-brands fa-twitter"> 
+
+                </i></a></li>
+                <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="Row2">
+        <div class="Logo"><img src="Project\Images\Logo\Logo.png" alt="" width="50px;" height="50px;"></div>
+        <div class="Address">
+            <ul>
+                <li>Suit# 03, 2nd Floor</li>
+                <li>Talha Heights, 6th Road,RWP</li>
+                <li>0333-2525251</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="Row3">
+        <div class="Menu">
+            <ul>
+                <center>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Graphic Designing.html">Graphics Designing</a></li>
+                    <li><a href="FullStackDevelopment.html">Full Stack Development  </a></li>
+                    <li><a href="AppDevelopment.html">App Development</a></li>
+                    <li><a href="Amazon.html">Amazon</a></li>
+                    <li><a href="DigitalMarketing.html">Digital Marketing</a></li>
+                    <li><a href="ArchitectureDesigning.html">Architecture Designing</a></li>
+                    
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                </center>
+                
+            </ul>
+        </div>
+    </div>
+
+    <div class="Row4">
+        <div class="MainImage"><img  src="Project\Images\Banner\Banner1.png" alt=""  width="100%"></div>
+    </div>
+
+    <div class="Row5">
+        <div class="PnyOption">
+            <center>
+                <img src="Project\Images\PnyOption\01.png" alt="">
+                <h3>Unlimited Access</h3>
+                <p>Choose What you’d like to learn from our extensive subscription library.</p>
+            </center>
+        </div>
+        <div class="PnyOption">
+            <center>
+                <img src="Project\Images\PnyOption\02.png" alt="">
+                <h3>Learn Anywhere</h3>
+                <p>Learn from industry experts who are passionate about teaching.</p>
+            </center>
+        </div>
+        <div class="PnyOption">
+            <center>
+                <img src="Project\Images\PnyOption\03.png" alt="">
+                <h3>Customizability</h3>
+                <p>Switch between your computer, tablet, or mobile device.</p>
+            </center>
+        </div>
+    </div>
+
+    <div class="Row6">
+        <div class="Msg">
+            <h2>Our Institute</h2>
+            <p>
+                PNY Trainings is the first choice of students who want to excel in the field of Internet Marketing. PNY Trainings consists of Top Level Trainers who are adept in the fields of Internet Marketing. We are the pioneer institute that started comprehensive Training for the benefit of students. Since our launch, thousands of students are trained and secured good jobs in the expanding IT industry as we all know. Contact us and secure your seat for upcoming training, events, and seminars.
+            </p>
+            <h3>CEO Message</h3>
+            <p>
+                Diversity and inclusion of thought, skill, knowledge, and culture make PNY Trainings more competitive, more resilient, and better. Diversity strengthens us by promoting unique viewpoints and challenging each of us, every day, to think beyond our traditional frames of reference. We are committed to building a talented and diverse workforce, and to creating an environment in which every STUDENT has the opportunity to excel based on his or her performance. We believe the best way to learn is by putting your skills to use. I warmly welcome you to visit by contacting us, and discover firsthand what makes PNY Trainings special.
+                <br>
+                -Wahab Yunus (CEO PNY Trainings)
+            </p>
+            <h3>Our Vision</h3>
+            <p>
+                To enhance our students’ skills technically, intellectually & digitally,
+                enabling them to attain excellence in their professional fields.
+            </p>
+
+
+        </div>
+        <div class="ImgMsg">
+            <img style="border-radius: 10px;;box-shadow: 0px 5px 5px #888888;" src="Project\Images\PnyMsg\PnyMsg.jpg" alt="" width="500px" height="500px">
+        </div>
+    </div>
+    
+    <div class="Row7">
+        <div class="graphics">
+            <h1 style="font-size: 55px; border-bottom: 5px solid red;width: 500px;">Graphic Designing</h1>
+            <ul>
+                <li><img src="Project/Images/Graphics Images/want45671-19B5kx1481720961.jpeg" alt="" ></li>
+                <li><p>This course is designed to develop a strong foundation of the students for developing powerful visual communications. Students will learn to visualize the concepts, techniques of graphics and design and application of software like Adobe Illustrator / CorelDraw, Photoshop and InDesign for creating effective designs for print media, outdoor advertisement and the web. The course will also cover Web designing using HTML5, CSS3 and Dreamweaver.</p></li>
+                <li> <h2>Brief Contents</h2> <br>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">Essentials of graphics, design and color theory</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">Working with Illustrator documents</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">Drawing and transforming objects</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">Managing color and transparency</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">Typography and using type in Illustrator</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">Controlling effects, appearances, and graphic style</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">Building graphic objects and working with images</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">Preparing graphics for web or screen display</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">Photoshop Intro, working with selections and layers</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">Using masks and channels</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">Working with type and vector tools</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">Adjusting and processing photographs</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">Retouching and manipulating images</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">Working in Adobe Camera Raw</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">Painting and filtering an image</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">Generating Output for Print media and the web</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">Creating web pages using HTML and XHTML</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">Controlling page styles and layout with CSS</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">Adding graphics and multimedia in web pages</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;">Using Dreamweaver for rapid web development</p>
+                </li>
+                <li>
+                    <h3>Training Methodology</h3>
+                </li>
+                <li>
+                    <h3>Audience</h3><br>
+                   <p style="border: 1px solid lightgray;border-radius: 1px;">Students and graduates of any discipline</p>
+                   <p style="border: 1px solid lightgray;border-radius: 1px;">People looking for career in graphics and web designing</p>
+                   <p style="border: 1px solid lightgray;border-radius: 1px;">People willing to learn graphic designing and animation</p>
+                </li>
+                <li>
+                    <h3>Course Project</h3> <br>
+                    <p>As a project of the course students have to develop a design theme according given requirements of a company. Student will also create logo, stationary, brochure, posters, banners, billboard and website of the company according to designed theme</p>
+                </li>
+                <li>
+                    <h3>Certificate
+                    </h3><br>
+                   <p style="border: 1px solid lightgray;border-radius: 1px;">Certified Graphics and Web Designer by PNY</p>
+                </li>
+                <li> 
+                    <h3>Duration & Frequency</h3> <br>
+                    <p style="border: 1px solid lightgray;border-radius: 1px;">3 Month (12 weeks; with 3 training sessions of 1.5 hours a week)</p>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="form">
+          
+            <h1>Registration Form</h1>
+       
+            <form>
+              <label for="username">Username:</label> <br>
+              <input type="text" id="username" name="username" placeholder="Enter your username"><br>
+              <label for="email">Email:</label><br>
+              <input type="email" id="email" name="email" placeholder="Enter your email"><br>
+              <label for="password">Password:</label><br>
+              <input type="password" id="password" name="password" placeholder="Enter your password"><br>
+              <button type="submit">Register</button>
+            
+            </form>
+        </div>
+    </div>
+
+    <div class="Row8">
+       <div class="adobPhotoshop">
+        <h1 style="font-size: 55px; border-bottom: 5px solid red;width: 420px;">Java</h1>
+        <ul>
+            <li><img src="Project/Images/Graphics Images/photoshop.jpeg" alt="" ></li>
+            <li><p>Adobe Photoshop is a powerful software application that is used for image editing and graphic design. It allows users to manipulate and enhance digital images through various tools and features..</p></li>
+            <li> <h2>Key features of Adobe Photoshop include:</h2> <br>
+            <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>Image Editing:</strong> Photoshop offers a wide range of tools for editing images, including cropping, resizing, and retouching. Users can adjust colors, brightness, contrast, and saturation to achieve the desired look.</p>
+            <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>Layers:</strong> One of the most powerful features of Photoshop is its support for layers. Users can work on different elements of an image independently, making it easier to make changes and adjustments without affecting the entire image.</p>
+
+            <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>Filters and Effects:</strong> Photoshop includes a variety of filters and effects that can be applied to images to achieve different artistic effects. These include blurring, sharpening, distortion, and stylization filters.</p>
+            <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>Selection Tools:</strong> Photoshop provides a range of selection tools that allow users to select specific areas of an image for editing. This includes the marquee tool, lasso tool, and magic wand tool, among others.</p>
+            <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>Text Editing:</strong> Photoshop allows users to add and manipulate text within images. Users can choose from a variety of fonts, styles, and formatting options to create text overlays, titles, and other graphic elements.</p>
+            <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>Drawing and Painting Tools:</strong> Photoshop includes a set of drawing and painting tools that allow users to create original artwork directly within the application. This includes brushes, pencils, pens, and other digital art tools.</p>
+            <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>Integration with other Adobe Creative Cloud Apps:</strong> Photoshop seamlessly integrates with other Adobe Creative Cloud applications, such as Illustrator and InDesign, allowing users to easily transfer files between programs and incorporate Photoshop edits into larger design projects.</p>
+        </ul>
+       </div>
+    </div>
+
+    <div class="Row8">
+        <div class="adobPhotoshop">
+         <h1 style="font-size: 55px; border-bottom: 5px solid red;width: 420px;">Adobe Illustrator</h1>
+         <ul>
+             <li><img src="Project/Images/Graphics Images/illustrator.webp" alt="" ></li>
+             <li><p>Adobe Illustrator is a powerful vector graphics editor developed and marketed by Adobe Inc. It is widely used by designers, artists, and illustrators for creating logos, icons, drawings, typography, and complex illustrations.</p></li>
+             <li> <h2>Key features of Adobe Illustrator:</h2> <br>
+             <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>Vector Graphics:</strong> Illustrator is based on vector graphics, which allows users to create scalable artwork that can be resized without losing quality. This is particularly useful for logos and illustrations that need to be used across different platforms and sizes.</p>
+
+             <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>Drawing Tools:</strong> Illustrator offers a wide range of drawing tools, including the Pen tool, Pencil tool, Shape tools, and more. These tools allow users to create precise and complex shapes and paths with ease.</p>
+ 
+             <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>Typography:</strong> With a comprehensive set of typography tools, Illustrator enables users to work with text in creative ways. Users can manipulate text in terms of font, size, spacing, and style, and also have access to features like text on a path and text in shapes.</p>
+             <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>Artboards:</strong> Illustrator allows users to work on multiple artboards within a single document. This feature is particularly useful for creating multi-page documents, such as brochures or presentations, or for exploring different design concepts within a single project.</p>
+             <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>Gradient and Pattern Tools:</strong> Illustrator provides robust gradient and pattern tools that allow users to create custom gradients, apply gradients to strokes and meshes, and create seamless patterns effortlessly.</p>
+             <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>Image Trace:</strong> Illustrator includes a powerful Image Trace feature that converts raster images into editable vector artwork. This feature is useful for converting scanned drawings or photographs into scalable vector graphics.</p>
+             <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>Brushes and Effects:</strong> Illustrator offers a variety of brush tools for creating different brush strokes and effects. Users can also apply various effects such as blurs, shadows, and distortions to their artwork to add depth and dimension.</p>
+             <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>Integration with Creative Cloud:</strong> Illustrator seamlessly integrates with other Adobe Creative Cloud apps such as Photoshop, InDesign, and After Effects, allowing for easy collaboration and workflow integration.</p>
+             <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>Export Options:</strong> Illustrator provides a wide range of export options, allowing users to save their artwork in various formats such as SVG, PDF, EPS, and more. Users can also export assets for web and mobile applications with optimized settings.</p>
+             <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>Customizable Interface:</strong> Illustrator offers a customizable workspace, allowing users to arrange panels, toolbars, and menus according to their preferences. This helps improve productivity by providing quick access to frequently used tools and features.</p>
+         </ul>
+        </div>
+     </div>
+ 
+     <div class="Row8">
+        <div class="adobPhotoshop">
+         <h1 style="font-size: 55px; border-bottom: 5px solid red;width: 500px;">Adobe After Effects</h1>
+         <ul>
+             <li><img src="Project/Images/Graphics Images/after effect.jpeg" alt="" ></li>
+             <li><h2>After Effects Masterclass Course Outline</h2>
+             <li> <h3>Module 1: Basic Navigation:</h3> <br>
+             <p style="border: 1px solid lightgray;border-radius: 1px"><strong>1:</strong>Introduction</p>
+             <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>2:</strong> User Interface</p>
+             <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>3:</strong> Creating a Project and Customising Workspace</p>
+             </li>
+             <li><h3>Module 2: Using Layers</h3></li>
+             <li>
+             <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>1:</strong>Importing Existing Layers from Photoshop</p>
+             <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>2:</strong> Editing Layer Properties</p>
+             <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>3:</strong> Moving Layers</p>
+             <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>4:</strong> Layer Masking</p>
+             <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>5:</strong>Locking Panels</p>
+             </li>
+             <li><h3>Module 3: Keyframes</h3></li>
+             <li>
+                <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>1:</strong>Introduction to Keyframes</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>2:</strong> Types Keyframes
+                </p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>3:</strong>Keyframe Shortcuts and Graph Editor</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>4:</strong>Auto-Keyframe</p>
+             </li>
+             <li><h3>Module 4: Working with Text</h3></li>
+             <li>
+                <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>1:</strong>Adding Text</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>2:</strong> Text Settings</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>3:</strong>Animating Text and Adding Effects</p>
+             </li>
+             <li><h3>Module 5: Using Masks</h3></li>
+             <li>
+                <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>1:</strong>What is Masks?</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>2:</strong> Animating Masks</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>3:</strong>Using Chroma-Keying Effects</p>
+             </li>
+             <li><h3>Module 6: Rendering Your Projects</h3></li>
+             <li>
+                <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>1:</strong>What is Rendering?</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>2:</strong> Render Queue Panel</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>3:</strong>Render Order</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>4:</strong>Using Media Encoder</p>
+             </li>
+             <li><h3>Module 7: Path Animation</h3></li>
+             <li>
+                <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>1:</strong>Writing in a Path</p>
+                </li>
+                <li><h3>Module 8: Working with Colours</h3></li>
+                <li>
+                <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>1:</strong> Setting the Depth Colour</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>2:</strong>Modifying Colour Display Setting</p>
+                <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>3:</strong>Choose a Colour Picker</p>
+             </li>
+             <li><h3>Module 9: Color Gradients and Plugins</h3></li>
+             <li>
+             <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>1:</strong> Color Gradients</p>
+             <p style="border: 1px solid lightgray;border-radius: 1px;"><strong>2:</strong>Using Plugins</p>
+          </li>
+             
+         </ul>
+        </div>
+     </div>
+ 
+     <div class="Row11">
+         <h1>Other Courses</h1>
+        <div class="othercourses">
+            <div class="multiple">
+                <a href="FullStackDevelopment.html"><img src="Project/Images/Canva/1.png" alt=""></a>  
+            </div>
+            <div class="multiple">
+                <a href="AppDevelopment.html"><img src="Project/Images/Canva/2.jpeg" alt=""></a>
+            </div>
+            <div class="multiple">
+                <a href=""><img src="Project/Images/Canva/4.jpeg" alt=""></a>
+            </div>
+            <div class="multiple">
+                <a href=""><img src="Project/Images/Canva/5.jpeg" alt=""></a>
+            </div>
+          
+        </div>
+
+     </div>
+  
+
+
+
+
+
+
+
+
+     <div class="Row9">
+        <div class="Footer">
+            <table>
+                <tr>
+                    <td colspan="2"><h3>Head Office</h3></td>
+                </tr>
+                <tr>
+                    <td style="width: 50px; text-align: left;;"><i class="fa-solid fa-building-columns"></i></td>
+                    <td>Office # 1, Level # 14, Arfa Software Technology Park, Ferozepur Road Lahore, Pakistan.</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-phone-volume"></i></td>
+                    <td>03041111774</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-brands fa-whatsapp"></i></td>
+                    <td>0320 1443744</td>
+                </tr>
+                
+            </table>
+        </div>
+        <div class="Footer">
+            <table>
+                <tr>
+                    <td colspan="2"><h3>Rawalpindi Branch</h3></td>
+                </tr>
+                <tr>
+                    <td style="width: 50px; text-align: left;;"><i class="fa-solid fa-building-columns"></i></td>
+                    <td>Office # 102, Floor #1 Talha Heights Plot # 21-D, 6th Road Satellite Town,Rawalpindi</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-phone-volume"></i></td>
+                    <td>0309-7772260</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-brands fa-whatsapp"></i></td>
+                    <td>0309-7774685</td>
+                </tr>
+            </table>
+        </div>
+        <div class="Footer">
+            <ul>
+                <center>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Graphics Designing</a></li>
+                    <li><a href="">Full Stack Development</a></li>
+                    <li><a href="">App Development</a></li>
+                    <li><a href="">Amazon</a></li>
+                    <li><a href="">Digital Marketing</a></li>
+                </center>
+            </ul>
+        </div>
+        <div class="Footer">
+            <ul>
+                <center>
+                    <li><a href="">Architecture Designing</a></li>    
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li style="display: inline-block; "><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li style="display: inline-block;"><a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li style="display: inline-block;"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li style="display: inline-block;"><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
+                </center>
+            </ul>
+        </div>
+       
+    </div>
+
+
+    <div class="Row10">
+        <div class="CopyRight"><h3>This website is copyright to Usama Tariq</h3></div>
+    </div>
+</body>
+</html>
